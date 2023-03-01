@@ -1,10 +1,10 @@
 
 /** ActuationModule.cs
 *
-*	Created by LIAM WOFFORD, USA-TX, for the Public Domain.
+*	Created by LIAM WOFFORD of CUBEROOT SOFTWARE, LLC.
 *
-*	Repo: https://github.com/Brungleby/Cuberoot
-*	Kofi: https://ko-fi.com/brungleby
+*	Free to use or modify, with or without creditation,
+*	under the Creative Commons 0 License.
 */
 
 #region Includes
