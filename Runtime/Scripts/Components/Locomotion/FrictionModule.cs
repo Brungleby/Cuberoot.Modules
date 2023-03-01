@@ -4,7 +4,6 @@
 *
 *	Free to use or modify, with or without creditation,
 *	under the Creative Commons 0 License.
-
 */
 
 #region Includes
