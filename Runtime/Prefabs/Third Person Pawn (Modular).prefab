@@ -1,0 +1,782 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &33607006558820013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4449871354435859169}
+  - component: {fileID: 7042495987978158194}
+  - component: {fileID: 7073597214421891303}
+  - component: {fileID: 3356047438573159265}
+  - component: {fileID: 6074531048322169725}
+  - component: {fileID: 6978545508247406592}
+  - component: {fileID: 7227376555507836857}
+  - component: {fileID: 5734459275059637611}
+  - component: {fileID: 3106344163656632998}
+  - component: {fileID: 9055624370559139754}
+  - component: {fileID: 2449287457511947507}
+  - component: {fileID: 8337981855555359989}
+  - component: {fileID: 7825907757698688403}
+  - component: {fileID: 47445717959856165}
+  m_Layer: 2
+  m_Name: Third Person Pawn (Modular)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4449871354435859169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6341031367428353978}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7042495987978158194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01bc4a6a1d84904b9a4a9611958ac99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkinWidth: 0.01
+  _Collider: {fileID: 3356047438573159265}
+  _Rigidbody: {fileID: 6074531048322169725}
+  _Velocity: {x: 0, y: 0, z: 0}
+--- !u!114 &7073597214421891303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284c97e8a8f4b594bb805254a2aa738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ActiveModeIndex: 1
+  _ModeRegistry:
+  - ID: Debug
+    _Components:
+    - {fileID: 7227376555507836857}
+    _OnEnabled:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnDisabled:
+      m_PersistentCalls:
+        m_Calls: []
+  - ID: WalkFall
+    _Components:
+    - {fileID: 6978545508247406592}
+    - {fileID: 5734459275059637611}
+    - {fileID: 3106344163656632998}
+    - {fileID: 9055624370559139754}
+    - {fileID: 2449287457511947507}
+    _OnEnabled:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnDisabled:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!136 &3356047438573159265
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Material: {fileID: 13400000, guid: 27c94ccfe3260ae4ba3979aa0d58b680, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6074531048322169725
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 112
+  m_CollisionDetection: 1
+--- !u!114 &6978545508247406592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7936bb77dfb0846a5d5a14d085cf80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Layers:
+    serializedVersion: 2
+    m_Bits: 5
+  _MaxDistance: 0.25
+  TreatSlopesAsFloors: 0
+  _SlopeMaxAngle: 55
+  _Events:
+    OnLand:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAirborne:
+      m_PersistentCalls:
+        m_Calls: []
+    OnTouch:
+      m_PersistentCalls:
+        m_Calls: []
+    OnSlip:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &7227376555507836857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d29318916dd8743bc942f61bea560b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Pawn: {fileID: 7042495987978158194}
+  OwnerController: {fileID: 7073597214421891303}
+  ViewTransform: {fileID: 8257817772711511386}
+  BecomeModeID: Debug
+  CancelModeID: WalkFall
+  FlySpeed: 250
+  BoostMultiplier: 5
+--- !u!114 &5734459275059637611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a3440c1ca529345a621bf2e508953a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scale: 1
+--- !u!114 &3106344163656632998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06fec7d90aa568e44b6d9f4816ccc8ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _GroundSensor: {fileID: 6978545508247406592}
+  DefaultStrength: 50
+  _AirbornePercent: 0.25
+  Scale: 1
+--- !u!114 &9055624370559139754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03c0257153bc61469e42c431bca0473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ViewTransform: {fileID: 6341031367428353978}
+  MaxWalkSpeed: 5
+  WalkAcceleration: 2
+  EnableExcessWalkSpeedInAir: 0
+  AccelerationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  SlopeSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _TurnExponent: 1
+  VerticalMuteOnLand: 0.05
+  EnableSurfaceClasping: 1
+  YawRotationMode: 0
+  _YawRotationSpeed: 0
+--- !u!114 &2449287457511947507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2370bd2ba637e94bb0c02fe3f05b8f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Handler:
+    Mode: 1
+    AutoDelay: 0.2
+    EnableInterruption: 1
+    EnableResume: 1
+    _OnBeginActuation:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnCeaseActuation:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnBeginActuationFailed:
+      m_PersistentCalls:
+        m_Calls: []
+    Owner: {fileID: 2449287457511947507}
+  MaxJumps: 1
+  JumpStrength: 4
+  JumpThrust: 15
+  _EnableJumpFromSlopes: 0
+  MaxJumpTime: 0.1
+  InputGraceTime: 0.25
+  GroundDisableTime: 0.1
+--- !u!114 &8337981855555359989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd5e3b52072a05f458a5667b0fe07492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Handler:
+    Mode: 0
+    AutoDelay: 0.2
+    EnableInterruption: 1
+    EnableResume: 1
+    _OnBeginActuation:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnCeaseActuation:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnBeginActuationFailed:
+      m_PersistentCalls:
+        m_Calls: []
+    Owner: {fileID: 8337981855555359989}
+  _OffsetTransform: {fileID: 0}
+  CrouchedHeight: 1
+  CrouchTime: 0.25
+--- !u!114 &7825907757698688403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b33a196547781c945b49799f78879da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Handler:
+    Mode: 0
+    AutoDelay: 0.2
+    EnableInterruption: 1
+    EnableResume: 1
+    _OnBeginActuation:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnCeaseActuation:
+      m_PersistentCalls:
+        m_Calls: []
+    _OnBeginActuationFailed:
+      m_PersistentCalls:
+        m_Calls: []
+    Owner: {fileID: 7825907757698688403}
+  Speed: 15
+  MaxAngle: 180
+  ForceSprintWhenActive: 1
+--- !u!114 &47445717959856165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33607006558820013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: e971f26d3019fde46bf3b0eff6593dcf, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9055624370559139754}
+        m_TargetAssemblyTypeName: Dinomo.Engine.WalkMovementModuleBase`6[[UnityEngine.Rigidbody,
+          UnityEngine
+        m_MethodName: OnInputWalk
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c9d8742d-9bef-428d-a235-a7c8b54fef51
+    m_ActionName: Walking Pawn 3D/Walk[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 594093383861759171}
+        m_TargetAssemblyTypeName: Dinomo.Engine.CameraController, Assembly-CSharp
+        m_MethodName: OnInputCamera_Biaxial
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cf28144b-7e11-473f-9abb-9ab4d79b1a22
+    m_ActionName: Walking Pawn 3D/Camera[/Mouse/delta,/XInputControllerWindows/rightStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2449287457511947507}
+        m_TargetAssemblyTypeName: Dinomo.Engine.ActuationModule, Assembly-CSharp
+        m_MethodName: OnInputActuated
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 630536f5-4874-4202-84f8-60562cae6e05
+    m_ActionName: Walking Pawn 3D/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7227376555507836857}
+        m_TargetAssemblyTypeName: Dinomo.Engine.GhostMovementModuleBase`3[[UnityEngine.Collider,
+          UnityEngine
+        m_MethodName: OnInputBoost
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7825907757698688403}
+        m_TargetAssemblyTypeName: Dinomo.Engine.ActuationModule, Assembly-CSharp
+        m_MethodName: OnInputActuated
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: af5c63da-3ced-4616-a0f3-7110b3dba607
+    m_ActionName: Walking Pawn 3D/Sprint[/Keyboard/leftShift,/XInputControllerWindows/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 19562297-1234-485f-a6e1-48bb108b3f99
+    m_ActionName: Walking Pawn 3D/Interact[/Keyboard/e,/XInputControllerWindows/buttonWest]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8337981855555359989}
+        m_TargetAssemblyTypeName: Dinomo.Engine.ActuationModule, Assembly-CSharp
+        m_MethodName: OnInputActuated
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e27c333d-2e97-497d-9f79-40fba1599df5
+    m_ActionName: Walking Pawn 3D/Crouch[/Keyboard/ctrl,/XInputControllerWindows/leftStickPress]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7227376555507836857}
+        m_TargetAssemblyTypeName: Dinomo.Engine.GhostMovementModuleBase`3[[UnityEngine.Collider,
+          UnityEngine
+        m_MethodName: OnInputToggleMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cf378ad1-cbe3-42e9-8d37-a404f98a0e04
+    m_ActionName: Walking Pawn 3D/[DEBUG] Ghost Enable[/Keyboard/v,/XInputControllerWindows/select]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7227376555507836857}
+        m_TargetAssemblyTypeName: Dinomo.Engine.GhostMovementModule, Assembly-CSharp
+        m_MethodName: OnInputMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0d062559-aff6-467b-9707-e068941fa38e
+    m_ActionName: Walking Pawn 3D/[DEBUG] Ghost Move[/Keyboard/e,/Keyboard/q,/Keyboard/a,/Keyboard/d,/Keyboard/w,/Keyboard/s,/XInputControllerWindows/rightTrigger,/XInputControllerWindows/leftTrigger,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right,/XInputControllerWindows/leftStick/up,/XInputControllerWindows/leftStick/down]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 72038000-3c86-4155-8e65-68d382b7b63c
+    m_ActionName: Walking Pawn 3D/[DEBUG] Time Warp[/Keyboard/ctrl,/XInputControllerWindows/leftShoulder]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Walking Pawn 3D
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 1537389950136870310}
+--- !u!1 &1276088128100677354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6341031367428353978}
+  - component: {fileID: 594093383861759171}
+  - component: {fileID: 6726355343222531170}
+  m_Layer: 2
+  m_Name: Camera Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6341031367428353978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276088128100677354}
+  m_LocalRotation: {x: 0.2164396, y: -0, z: -0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8679166694467769351}
+  m_Father: {fileID: 4449871354435859169}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &594093383861759171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276088128100677354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae36ccedf0f5014182afd99515d92c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Pawn: {fileID: 7042495987978158194}
+  Camera: {fileID: 1537389950136870310}
+  ApplyRotationToPawn:
+    x: 0
+    y: 0
+    z: 0
+  Speed: {x: 100, y: 100, z: 100}
+  InvertInputAxes:
+    x: 1
+    y: 0
+    z: 0
+  SwapXYInput: 1
+  EnableAngleLimits:
+    x: 1
+    y: 0
+    z: 0
+  _AngleLimits: {x: 90, y: 0, z: 0}
+  SpeedLimits: {x: 15, y: 15, z: 15}
+--- !u!114 &6726355343222531170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276088128100677354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6832d222befd845a1ca522f789d7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 0}
+  PositionalLagTime: 0
+  MaxDistance: 1
+--- !u!1 &7541469681288806507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8257817772711511386}
+  - component: {fileID: 2238368968484034918}
+  - component: {fileID: 1537389950136870310}
+  - component: {fileID: 4494966832901627527}
+  m_Layer: 2
+  m_Name: Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8257817772711511386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541469681288806507}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8679166694467769351}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2238368968484034918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541469681288806507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a2d3e364ed4a94d851c99cff826368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SensorLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  SensorRadius: 0.15
+  SmoothTime: 0.125
+  _OriginPositionLocal: {x: 0, y: 0, z: 0}
+  _MinDistance: 1.5
+--- !u!20 &1537389950136870310
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541469681288806507}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 45
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &4494966832901627527
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541469681288806507}
+  m_Enabled: 1
+--- !u!1 &8985130357237348437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8679166694467769351}
+  - component: {fileID: 3072938255337809758}
+  - component: {fileID: 738777130911204225}
+  m_Layer: 2
+  m_Name: Camera Boom Stick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8679166694467769351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8985130357237348437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8257817772711511386}
+  m_Father: {fileID: 6341031367428353978}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!114 &3072938255337809758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8985130357237348437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6832d222befd845a1ca522f789d7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 0}
+  PositionalLagTime: 0.1
+  MaxDistance: 2
+--- !u!114 &738777130911204225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8985130357237348437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e8a371c887a05e478d2bd8e04b53ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anchor: {fileID: 0}
+  RotationalLagTime: 0.15
